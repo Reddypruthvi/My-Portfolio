@@ -1,27 +1,31 @@
 import React from 'react';
 
 const technologies = [
-  "Python", "JavaScript", "React.js", "Node.js", "MongoDB", "MySQL", "AI/ML", 
-  "TensorFlow", "Kotlin", "Firebase", "AWS", "Git", "Docker"
+  'Python',
+  'Java',
+  'React.js',
+  'JavaScript',
+  'Node.js',
+  'Express.js',
+  'MySQL',
+  'MongoDB',
+  'Machine Learning',
+  'Git',
+  'AWS Basics',
 ];
 
 const Marquee = () => {
+  const items = [...technologies, ...technologies];
+
   return (
-    <div className="py-6 overflow-hidden bg-accent/10 border-y border-accent/20 flex relative">
-      <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-background via-transparent to-background"></div>
-      
-      <div className="animate-marquee whitespace-nowrap flex space-x-8 items-center min-w-full">
-        {technologies.map((tech, index) => (
-          <React.Fragment key={index}>
-            <span className="text-2xl font-bold text-gray-300 mx-4">{tech}</span>
-            <span className="text-accent">✦</span>
-          </React.Fragment>
-        ))}
-        {/* Duplicate for seamless loop */}
-        {technologies.map((tech, index) => (
-          <React.Fragment key={`dup-${index}`}>
-            <span className="text-2xl font-bold text-gray-300 mx-4">{tech}</span>
-            <span className="text-accent">✦</span>
+    <div className="relative flex overflow-hidden border-y border-accent/15 bg-accent/[0.04] py-5">
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-background to-transparent sm:w-28" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-background to-transparent sm:w-28" />
+      <div className="flex min-w-max animate-marquee items-center gap-8 whitespace-nowrap" aria-label="Technologies">
+        {items.map((technology, index) => (
+          <React.Fragment key={`${technology}-${index}`}>
+            <span className="text-sm font-semibold tracking-wide text-gray-300 sm:text-base">{technology}</span>
+            <span className="text-accent" aria-hidden="true">✦</span>
           </React.Fragment>
         ))}
       </div>

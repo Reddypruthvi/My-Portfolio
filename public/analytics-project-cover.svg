@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="24" x2="1088" y2="628" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a2415"/>
+      <stop offset="1" stop-color="#080a08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+  <g opacity=".13" stroke="#d8ff9b"><path d="M0 128h1200M0 256h1200M0 384h1200M0 512h1200"/><path d="M120 0v640M240 0v640M360 0v640M480 0v640M600 0v640M720 0v640M840 0v640M960 0v640M1080 0v640"/></g>
+  <rect x="74" y="74" width="1052" height="492" rx="22" fill="#080b08" fill-opacity=".74" stroke="#b7f34a" stroke-opacity=".18"/>
+  <text x="116" y="128" fill="#eaffc2" font-family="Arial,sans-serif" font-size="20" font-weight="700">SALES &amp; CUSTOMER ANALYTICS</text>
+  <text x="116" y="159" fill="#87947b" font-family="Arial,sans-serif" font-size="13">Store performance · Year to date</text>
+  <rect x="116" y="190" width="217" height="106" rx="14" fill="#151b13" stroke="#b7f34a" stroke-opacity=".2"/>
+  <text x="139" y="222" fill="#8b9880" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">TOTAL REVENUE</text>
+  <text x="139" y="265" fill="#eaffc2" font-family="Arial,sans-serif" font-size="27" font-weight="700">Revenue</text>
+  <text x="258" y="267" fill="#b7f34a" font-family="Arial,sans-serif" font-size="13">Overview</text>
+  <rect x="351" y="190" width="217" height="106" rx="14" fill="#151b13" stroke="#b7f34a" stroke-opacity=".2"/>
+  <text x="374" y="222" fill="#8b9880" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">CUSTOMERS</text>
+  <text x="374" y="265" fill="#eaffc2" font-family="Arial,sans-serif" font-size="27" font-weight="700">Customers</text>
+  <text x="493" y="267" fill="#b7f34a" font-family="Arial,sans-serif" font-size="13">Insights</text>
+  <rect x="603" y="190" width="479" height="324" rx="16" fill="#121712" stroke="#b7f34a" stroke-opacity=".19"/>
+  <text x="631" y="228" fill="#dce8d2" font-family="Arial,sans-serif" font-size="14" font-weight="700">Monthly sales</text>
+  <path d="M631 453h423M631 397h423M631 341h423M631 285h423" stroke="#829078" stroke-opacity=".19"/>
+  <path d="M647 444 698 408l50 18 50-81 51 24 50-58 50 21 51-85 51 24" stroke="#b7f34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#caff70"><circle cx="647" cy="444" r="5"/><circle cx="698" cy="408" r="5"/><circle cx="748" cy="426" r="5"/><circle cx="798" cy="345" r="5"/><circle cx="849" cy="369" r="5"/><circle cx="899" cy="311" r="5"/><circle cx="949" cy="332" r="5"/><circle cx="1000" cy="247" r="5"/><circle cx="1051" cy="271" r="5"/></g>
+  <rect x="116" y="318" width="452" height="196" rx="16" fill="#121712" stroke="#b7f34a" stroke-opacity=".19"/>
+  <text x="144" y="356" fill="#dce8d2" font-family="Arial,sans-serif" font-size="14" font-weight="700">Revenue by category</text>
+  <path d="M150 467h43v-49h-43zm67 0h43v-75h-43zm67 0h43v-102h-43zm67 0h43v-71h-43zm67 0h43v-122h-43zm67 0h43v-91h-43z" fill="#b7f34a" fill-opacity=".76"/>
+  <path d="M150 478h357" stroke="#829078" stroke-opacity=".4" stroke-width="2"/>
+</svg>

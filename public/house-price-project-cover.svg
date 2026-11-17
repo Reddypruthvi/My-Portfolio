@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="125" y1="28" x2="1080" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1c2516"/>
+      <stop offset="1" stop-color="#080a08"/>
+    </linearGradient>
+    <linearGradient id="house" x1="277" y1="246" x2="639" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c5ef89" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#4c6539" stop-opacity=".68"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+  <g opacity=".13" stroke="#d8ff9b"><path d="M0 128h1200M0 256h1200M0 384h1200M0 512h1200"/><path d="M120 0v640M240 0v640M360 0v640M480 0v640M600 0v640M720 0v640M840 0v640M960 0v640M1080 0v640"/></g>
+  <rect x="74" y="74" width="1052" height="492" rx="22" fill="#080b08" fill-opacity=".7" stroke="#b7f34a" stroke-opacity=".16"/>
+  <path d="m172 354 225-191 231 191v157H172V354Z" fill="url(#house)" stroke="#d6ff9e" stroke-opacity=".68" stroke-width="3"/>
+  <path d="m150 351 247-210 251 210-22 26-229-191-226 191-21-26Z" fill="#b7f34a" fill-opacity=".8"/>
+  <path d="M328 511V382h83v129m-132-81h37v39h-37zm188 0h37v39h-37z" fill="#121a10" stroke="#d6ff9e" stroke-opacity=".62" stroke-width="3"/>
+  <path d="M369 254h53v48h-53z" fill="#101610" stroke="#d6ff9e" stroke-opacity=".7" stroke-width="3"/>
+  <path d="M396 254v48m-27-24h53" stroke="#d6ff9e" stroke-opacity=".4" stroke-width="2"/>
+  <path d="M175 525h460" stroke="#b7f34a" stroke-opacity=".5" stroke-width="2"/>
+  <circle cx="647" cy="249" r="102" fill="#b7f34a" fill-opacity=".07"/>
+  <circle cx="647" cy="249" r="65" stroke="#b7f34a" stroke-opacity=".2" stroke-width="2"/>
+  <circle cx="647" cy="249" r="37" stroke="#b7f34a" stroke-opacity=".32" stroke-width="2"/>
+  <circle cx="647" cy="249" r="9" fill="#c1ff4b"/>
+  <path d="m647 249 54-39" stroke="#c1ff4b" stroke-width="3" stroke-linecap="round"/>
+  <rect x="741" y="160" width="313" height="332" rx="18" fill="#141a12" stroke="#b7f34a" stroke-opacity=".27"/>
+  <text x="772" y="205" fill="#8e9d82" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">ESTIMATED PROPERTY VALUE</text>
+  <text x="772" y="258" fill="#eaffc2" font-family="Arial,sans-serif" font-size="28" font-weight="700">Model estimate</text>
+  <text x="772" y="289" fill="#b7f34a" font-family="Arial,sans-serif" font-size="13">Based on property features</text>
+  <path d="M772 312h250" stroke="#75816b" stroke-opacity=".3"/>
+  <text x="772" y="349" fill="#a2af96" font-family="Arial,sans-serif" font-size="13">Property features</text>
+  <text x="772" y="389" fill="#e3ecd9" font-family="Arial,sans-serif" font-size="14">Bedrooms</text>
+  <text x="1008" y="389" fill="#e3ecd9" font-family="Arial,sans-serif" font-size="14" text-anchor="end">Bathrooms</text>
+  <text x="772" y="423" fill="#e3ecd9" font-family="Arial,sans-serif" font-size="14">Property size</text>
+  <text x="1008" y="423" fill="#e3ecd9" font-family="Arial,sans-serif" font-size="14" text-anchor="end">Features</text>
+  <rect x="772" y="449" width="250" height="7" rx="3.5" fill="#303b2b"/>
+  <rect x="772" y="449" width="176" height="7" rx="3.5" fill="#b7f34a"/>
+</svg>

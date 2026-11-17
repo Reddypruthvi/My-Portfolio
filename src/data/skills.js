@@ -1,77 +1,72 @@
-import { Code2, Globe, Database, Brain, Cloud, Settings, BookOpen, Users } from 'lucide-react';
-import { FiCode, FiGlobe, FiDatabase, FiCpu, FiCloud, FiTool, FiBook, FiUsers } from 'react-icons/fi';
+import {
+  FiBookOpen,
+  FiCloud,
+  FiCode,
+  FiDatabase,
+  FiGlobe,
+  FiTool,
+} from 'react-icons/fi';
 
 export const skills = [
   {
-    category: "Programming Languages",
+    category: 'Programming',
     icon: FiCode,
     items: [
-      { name: "Python", description: "General & ML", level: "Advanced" },
-      { name: "Java", description: "Object-oriented", level: "Advanced" },
-      { name: "JavaScript", description: "Web interactivity", level: "Advanced" },
-      { name: "Kotlin", description: "Android Development", level: "Intermediate" },
-      { name: "SQL", description: "Database querying", level: "Advanced" }
-    ]
+      { name: 'Python', description: 'Programming language' },
+      { name: 'Java', description: 'Object-oriented programming' },
+    ],
   },
   {
-    category: "Web Technologies",
+    category: 'Frontend',
     icon: FiGlobe,
     items: [
-      { name: "HTML/CSS", description: "Web structure & styling", level: "Advanced" },
-      { name: "React.js", description: "Frontend Library", level: "Advanced" },
-      { name: "Node.js", description: "Backend Runtime", level: "Advanced" },
-      { name: "Next.js", description: "React Framework", level: "Intermediate" },
-      { name: "REST APIs", description: "Web services", level: "Advanced" }
-    ]
+      { name: 'HTML', description: 'Web structure' },
+      { name: 'CSS', description: 'Web styling' },
+      { name: 'JavaScript', description: 'Web development' },
+      { name: 'React.js', description: 'Frontend library' },
+    ],
   },
   {
-    category: "Databases",
+    category: 'Backend',
+    icon: FiCode,
+    items: [
+      { name: 'Node.js', description: 'JavaScript runtime' },
+      { name: 'Express.js', description: 'Web application framework' },
+    ],
+  },
+  {
+    category: 'Databases',
     icon: FiDatabase,
     items: [
-      { name: "MySQL", description: "Relational DB", level: "Advanced" },
-      { name: "MongoDB", description: "NoSQL DB", level: "Advanced" },
-      { name: "Firebase", description: "Backend-as-a-Service", level: "Intermediate" }
-    ]
+      { name: 'MySQL', description: 'Relational database' },
+      { name: 'MongoDB', description: 'Document database' },
+    ],
   },
   {
-    category: "Core Concepts",
-    icon: FiCpu,
+    category: 'Tools',
+    icon: FiTool,
     items: [
-      { name: "Data Structures & Algorithms", description: "Problem Solving", level: "Advanced" },
-      { name: "OOP", description: "Object-oriented paradigm", level: "Advanced" },
-      { name: "DBMS", description: "Database Management", level: "Advanced" },
-      { name: "OS & Networks", description: "Computer Systems", level: "Intermediate" },
-      { name: "Machine Learning & NLP", description: "AI Concepts", level: "Intermediate" }
-    ]
+      { name: 'Git', description: 'Version control' },
+      { name: 'GitHub', description: 'Code hosting' },
+      { name: 'VS Code', description: 'Code editor' },
+      { name: 'Android Studio', description: 'Android development' },
+      { name: 'Linux', description: 'Operating system' },
+    ],
   },
   {
-    category: "Cloud & Tools",
+    category: 'Cloud',
     icon: FiCloud,
-    items: [
-      { name: "AWS & GCP", description: "Cloud Platforms", level: "Intermediate" },
-      { name: "Git & GitHub", description: "Version Control", level: "Advanced" },
-      { name: "VS Code & Android Studio", description: "IDEs", level: "Advanced" },
-      { name: "Linux", description: "Operating System", level: "Intermediate" }
-    ]
+    items: [{ name: 'AWS Basics', description: 'Cloud fundamentals' }],
   },
   {
-    category: "Libraries",
-    icon: FiBook,
+    category: 'Core Concepts',
+    icon: FiBookOpen,
     items: [
-      { name: "Pandas & NumPy", description: "Data Manipulation", level: "Advanced" },
-      { name: "Matplotlib", description: "Data Visualization", level: "Advanced" },
-      { name: "TensorFlow", description: "Deep Learning", level: "Intermediate" },
-      { name: "Transformers", description: "NLP Models", level: "Intermediate" }
-    ]
+      { name: 'Data Structures and Algorithms', description: 'Computer science fundamentals' },
+      { name: 'OOP', description: 'Object-oriented programming' },
+      { name: 'DBMS', description: 'Database systems' },
+      { name: 'Operating Systems', description: 'Computer systems' },
+      { name: 'Computer Networks', description: 'Network fundamentals' },
+    ],
   },
-  {
-    category: "Soft Skills",
-    icon: FiUsers,
-    items: [
-      { name: "Problem Solving", description: "Analytical Thinking", level: "Advanced" },
-      { name: "Teamwork", description: "Collaboration", level: "Advanced" },
-      { name: "Adaptability", description: "Quick Learner", level: "Advanced" },
-      { name: "Time Management", description: "Efficiency", level: "Advanced" }
-    ]
-  }
 ];

@@ -4,13 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/dev.js",
+    "server": "node server/index.js",
     "build": "vite build",
+    "test": "node --test",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "framer-motion": "^13.1.0",
     "lucide-react": "^1.31.0",
     "react": "^19.2.8",

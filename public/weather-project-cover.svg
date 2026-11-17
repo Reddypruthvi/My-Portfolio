@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="118" y1="32" x2="1102" y2="624" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17251c"/>
+      <stop offset="1" stop-color="#080a08"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="176" y1="166" x2="690" y2="503" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#536943"/>
+      <stop offset="1" stop-color="#19221a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#d8ff9b"><path d="M0 128h1200M0 256h1200M0 384h1200M0 512h1200"/><path d="M120 0v640M240 0v640M360 0v640M480 0v640M600 0v640M720 0v640M840 0v640M960 0v640M1080 0v640"/></g>
+  <rect x="74" y="74" width="1052" height="492" rx="22" fill="#080b08" fill-opacity=".7" stroke="#b7f34a" stroke-opacity=".17"/>
+  <rect x="108" y="108" width="984" height="424" rx="18" fill="url(#sky)"/>
+  <circle cx="360" cy="271" r="82" fill="#c1ff4b" fill-opacity=".18"/>
+  <circle cx="360" cy="271" r="52" fill="#c1ff4b" fill-opacity=".74"/>
+  <path d="M360 189v-25m0 216v-25m82-84h25m-216 0h25m142-58 18-18m-152 152 18-18m116 0 18 18m-152-152 18 18" stroke="#dfffaa" stroke-linecap="round" stroke-width="5"/>
+  <path d="M470 349c-31 0-55-23-55-52 0-26 20-48 47-51 9-45 47-78 93-78 49 0 89 38 94 86 31 2 56 26 56 56 0 31-25 56-56 56H470Z" fill="#d9e8cb" fill-opacity=".82"/>
+  <path d="m502 412-22 39m82-39-22 39m82-39-22 39" stroke="#c1ff4b" stroke-linecap="round" stroke-width="7"/>
+  <text x="176" y="468" fill="#f3f8e9" font-family="Arial,sans-serif" font-size="53" font-weight="700">--°</text>
+  <text x="180" y="500" fill="#d0dfc4" font-family="Arial,sans-serif" font-size="16">Live weather conditions</text>
+  <rect x="744" y="145" width="303" height="344" rx="18" fill="#0c100c" fill-opacity=".86" stroke="#b7f34a" stroke-opacity=".28"/>
+  <text x="777" y="190" fill="#d5efb9" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="1.8">TODAY’S FORECAST</text>
+  <text x="777" y="226" fill="#839179" font-family="Arial,sans-serif" font-size="13">Bengaluru, India</text>
+  <path d="M777 247h237" stroke="#75816b" stroke-opacity=".28"/>
+  <circle cx="803" cy="288" r="13" fill="#b7f34a" fill-opacity=".75"/>
+  <text x="833" y="293" fill="#eaf3df" font-family="Arial,sans-serif" font-size="14">Now</text>
+  <text x="965" y="293" fill="#eaf3df" font-family="Arial,sans-serif" font-size="15" font-weight="700">--°</text>
+  <path d="M790 340h223" stroke="#75816b" stroke-opacity=".28"/>
+  <path d="M797 367h13m-7-7v14" stroke="#c1ff4b" stroke-linecap="round" stroke-width="2"/>
+  <text x="833" y="372" fill="#eaf3df" font-family="Arial,sans-serif" font-size="14">Humidity</text>
+  <text x="965" y="372" fill="#b7f34a" font-family="Arial,sans-serif" font-size="14" font-weight="700">--</text>
+  <path d="M797 424h13m-7-7v14" stroke="#c1ff4b" stroke-linecap="round" stroke-width="2"/>
+  <text x="833" y="429" fill="#eaf3df" font-family="Arial,sans-serif" font-size="14">Wind</text>
+  <text x="965" y="429" fill="#b7f34a" font-family="Arial,sans-serif" font-size="14" font-weight="700">--</text>
+  <rect x="777" y="455" width="237" height="3" rx="1.5" fill="#303a2b"/>
+</svg>

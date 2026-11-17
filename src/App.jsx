@@ -12,6 +12,7 @@ import Certifications from './components/Certifications';
 import Github from './components/Github';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Github />
       <Contact />
       <Footer />
+      <Chatbot />
     </div>
   );
 }

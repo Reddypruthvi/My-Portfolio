@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="48" x2="1090" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b2415"/>
+      <stop offset="1" stop-color="#090c09"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="260" y1="190" x2="900" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#222b1e"/>
+      <stop offset="1" stop-color="#101410"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="760" y1="112" x2="1024" y2="425" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c1ff4b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#c1ff4b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="767" y="12" width="449" height="449" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="64"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#d8ff9b">
+    <path d="M0 128h1200M0 256h1200M0 384h1200M0 512h1200"/>
+    <path d="M120 0v640M240 0v640M360 0v640M480 0v640M600 0v640M720 0v640M840 0v640M960 0v640M1080 0v640"/>
+  </g>
+  <circle cx="992" cy="236" r="160" fill="url(#glow)" filter="url(#blur)"/>
+  <rect x="76" y="74" width="1048" height="492" rx="22" fill="#080b08" fill-opacity=".72" stroke="#c1ff4b" stroke-opacity=".16"/>
+  <rect x="104" y="102" width="992" height="54" rx="12" fill="#121812"/>
+  <circle cx="130" cy="129" r="5" fill="#c1ff4b"/>
+  <text x="150" y="135" fill="#eaffc2" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">DRIVER SAFETY MONITOR</text>
+  <text x="930" y="134" fill="#c1ff4b" font-family="Arial,sans-serif" font-size="13" font-weight="700">LIVE ANALYSIS</text>
+  <rect x="104" y="178" width="624" height="350" rx="16" fill="url(#glass)" stroke="#c1ff4b" stroke-opacity=".2"/>
+  <path d="M104 405c98-16 181-8 261 0s170 9 363-4v127H104V405Z" fill="#101610"/>
+  <path d="M104 425c161-19 335-14 624-4" stroke="#c1ff4b" stroke-opacity=".34" stroke-width="2"/>
+  <path d="M178 500c39-43 92-65 157-65s118 22 157 65" stroke="#3b4932" stroke-width="4"/>
+  <path d="m223 499 39-82h151l39 82" fill="#111711" stroke="#b7f34a" stroke-opacity=".42" stroke-width="3"/>
+  <path d="M267 417c10-77 38-126 77-126s67 49 77 126" fill="#84946f" fill-opacity=".24" stroke="#c1ff4b" stroke-opacity=".7" stroke-width="3"/>
+  <ellipse cx="344" cy="353" rx="57" ry="73" fill="#c5d2b6" fill-opacity=".15" stroke="#d8ff9b" stroke-opacity=".56" stroke-width="2"/>
+  <path d="M302 345c3-31 16-46 42-46 25 0 39 15 42 46" stroke="#c1ff4b" stroke-opacity=".8" stroke-width="2"/>
+  <circle cx="326" cy="351" r="4" fill="#c1ff4b"/>
+  <circle cx="362" cy="351" r="4" fill="#c1ff4b"/>
+  <path d="M331 382c8 6 18 6 26 0" stroke="#c1ff4b" stroke-linecap="round" stroke-width="2"/>
+  <path d="M277 286h24m-24 0v24m135-24h-24m24 0v24m-135 101h24m-24 0v-24m135 24h-24m24 0v-24" stroke="#c1ff4b" stroke-linecap="round" stroke-width="3"/>
+  <rect x="759" y="178" width="337" height="158" rx="16" fill="#151a14" stroke="#c1ff4b" stroke-opacity=".18"/>
+  <text x="787" y="215" fill="#91a185" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">ATTENTION STATE</text>
+  <text x="787" y="263" fill="#eaffc2" font-family="Arial,sans-serif" font-size="32" font-weight="700">Focused</text>
+  <rect x="787" y="286" width="278" height="7" rx="3.5" fill="#293224"/>
+  <rect x="787" y="286" width="222" height="7" rx="3.5" fill="#b7f34a"/>
+  <text x="787" y="318" fill="#a8b89a" font-family="Arial,sans-serif" font-size="13">Attention level</text>
+  <text x="1014" y="318" fill="#c1ff4b" font-family="Arial,sans-serif" font-size="13" font-weight="700">80%</text>
+  <rect x="759" y="354" width="160" height="174" rx="16" fill="#151a14" stroke="#c1ff4b" stroke-opacity=".18"/>
+  <text x="782" y="390" fill="#91a185" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">FATIGUE</text>
+  <circle cx="839" cy="459" r="39" stroke="#303b2b" stroke-width="8"/>
+  <path d="M839 420a39 39 0 0 1 36 24" stroke="#b7f34a" stroke-linecap="round" stroke-width="8"/>
+  <text x="839" y="465" fill="#eaffc2" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">Low</text>
+  <rect x="936" y="354" width="160" height="174" rx="16" fill="#151a14" stroke="#c1ff4b" stroke-opacity=".18"/>
+  <text x="959" y="390" fill="#91a185" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">EMOTION</text>
+  <path d="M981 459c10 9 25 9 35 0m-34-17h1m33 0h1" stroke="#c1ff4b" stroke-linecap="round" stroke-width="4"/>
+  <circle cx="1009" cy="454" r="32" stroke="#b7f34a" stroke-opacity=".3" stroke-width="2"/>
+  <text x="1016" y="506" fill="#eaffc2" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Calm</text>
+</svg>

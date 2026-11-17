@@ -13,7 +13,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="text-4xl font-extrabold text-white mb-4"
           >
-            Technical Arsenal
+            Technical Skills
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ const Skills = () => {
             transition={{ delay: 0.1 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto"
           >
-            A comprehensive overview of my technical skills and tools I use to bring ideas to life.
+            Core technologies and concepts I use to build practical software.
           </motion.p>
         </div>
 

@@ -4,16 +4,16 @@ export const experience = [
     title: "Android App Development Intern (Generative AI)",
     company: "Mind Matrix",
     type: "Remote",
-    date: "May 2026 – June 2026",
+    date: "February 2026 – June 2026",
     description: "Integrated Generative AI APIs into Android applications, automating key features and improving app functionality. Built AI-powered UI components and data-processing features that enhanced overall user experience. Collaborated with a development team through the full test-debug-optimize cycle to improve application performance.",
-    technologies: ["Android Studio", "Kotlin", "Generative AI", "APIs"]
+    technologies: ["Kotlin", "Android Studio", "Generative AI APIs"]
   }
 ];
 
 export const education = [
   {
     id: 1,
-    degree: "B.E. – Computer Science and Data Science Engineering",
+    degree: "B.E. – Computer Science and Engineering (Data Science)",
     major: "CGPA: 7.2/10",
     institution: "AMC Engineering College",
     location: "Bengaluru, Karnataka",
@@ -29,11 +29,11 @@ export const education = [
   },
   {
     id: 2,
-    degree: "Diploma in Mechanical Engineering",
-    major: "Percentage: 78%",
+    degree: "Diploma – Mechanical Engineering",
+    major: "",
     institution: "KVT Polytechnic",
     location: "Chikkaballapur, Karnataka",
-    duration: "2020 – 2023",
+    duration: "2023",
     coursework: []
   }
 ];

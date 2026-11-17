@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 24);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -24,49 +23,86 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-4 glass shadow-lg' : 'py-6 bg-transparent'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-white tracking-tight">Pruthvi Reddy K</a>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <div className="flex space-x-6">
-              {navLinks.map((link) => (
-                <a key={link.name} href={link.href} className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                  {link.name}
-                </a>
-              ))}
-            </div>
-            <a href="#contact" className="px-5 py-2 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors flex items-center space-x-2">
-              <span>Let's Talk</span>
-              <span>→</span>
-            </a>
-          </div>
+    <nav
+      aria-label="Main navigation"
+      className={`fixed z-50 w-full border-b transition-all duration-300 ${
+        isScrolled
+          ? 'border-white/10 bg-background/90 py-3 shadow-lg shadow-black/10 backdrop-blur-xl'
+          : 'border-white/5 bg-background/60 py-4 backdrop-blur-md'
+      }`}
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="#hero" className="flex items-center gap-3" aria-label="Pruthvi Reddy K, home">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-accent/30 bg-accent/10 text-sm font-bold text-accent">
+            PR
+          </span>
+          <span className="text-base font-semibold tracking-tight text-white sm:text-lg">
+            Pruthvi Reddy K
+          </span>
+        </a>
 
-          <div className="md:hidden">
-            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white p-2">
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div className={`md:hidden absolute top-full left-0 w-full glass overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-[500px] border-t border-white/10' : 'max-h-0'}`}>
-        <div className="px-4 py-4 flex flex-col space-y-4">
+        <div className="hidden items-center gap-6 xl:flex">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-gray-300 hover:text-white transition-colors text-lg font-medium"
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-sm font-medium text-gray-400 transition-colors hover:text-white"
             >
               {link.name}
             </a>
           ))}
-          <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="inline-flex items-center space-x-2 text-accent font-semibold text-lg mt-4">
-            <span>Let's Talk</span>
-            <span>→</span>
+          <a
+            href="/Pruthvi_Reddy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-gray-950 transition hover:bg-lime-300"
+          >
+            Résumé
+            <ArrowUpRight size={15} />
+          </a>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen((open) => !open)}
+          className="rounded-lg p-2 text-gray-200 transition hover:bg-white/10 xl:hidden"
+          aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
+        >
+          {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
+
+      <div
+        id="mobile-navigation"
+        className={`overflow-hidden border-t border-white/10 bg-background/95 transition-all duration-300 xl:hidden ${
+          mobileMenuOpen ? 'mt-4 max-h-96 opacity-100' : 'max-h-0 border-transparent opacity-0'
+        }`}
+        aria-hidden={!mobileMenuOpen}
+      >
+        <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              tabIndex={mobileMenuOpen ? 0 : -1}
+              className="rounded-lg px-3 py-3 text-sm font-medium text-gray-300 transition hover:bg-white/5 hover:text-white"
+            >
+              {link.name}
+            </a>
+          ))}
+          <a
+            href="/Pruthvi_Reddy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            tabIndex={mobileMenuOpen ? 0 : -1}
+            className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-3 font-semibold text-gray-950"
+          >
+            View résumé
+            <ArrowUpRight size={16} />
           </a>
         </div>
       </div>

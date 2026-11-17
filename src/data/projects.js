@@ -1,50 +1,81 @@
+const profileRepositories = 'https://github.com/Reddypruthvi?tab=repositories';
+
 export const projects = [
   {
     id: 1,
-    title: "Real-Time Driver Monitoring using Multi-Modal Emotion Recognition",
-    category: "Machine Learning / AI",
-    description: "A real-time driver-monitoring system that classifies emotional and fatigue states from facial, voice, and sensor data using multi-modal ML models.",
-    technologies: ["Python", "Machine Learning"],
-    github: "#",
-    live: "#",
-    image: "/project-1.jpg", 
+    title: 'Real-Time Driver Monitoring using Multi-Modal Emotion Recognition',
+    category: 'AI / Machine Learning',
+    description:
+      'A driver-safety application for real-time analysis of a driver’s emotional state and drowsiness using camera and microphone input.',
+    technologies: ['Python', 'Machine Learning', 'OpenCV', 'Flask'],
+    image: '/driver-monitoring-cover.svg',
+    github: 'https://github.com/Reddypruthvi/emotion',
     features: [
-      "Engineered feature extraction and classification pipelines.",
-      "Improved detection reliability across multiple input signal types.",
-      "Evaluated model performance using standard classification metrics.",
-      "Validated accuracy for a safety-critical use case."
-    ]
+      'Analyzes driver state from camera and microphone input.',
+      'Monitors drowsiness, fatigue, distraction, and emotional state.',
+      'Combines computer-vision signals with audio analysis.',
+    ],
   },
   {
     id: 2,
-    title: "Hotel Management System",
-    category: "Full Stack Web Development",
-    description: "A full-featured Hotel Management System covering guest reservations, check-in/check-out, billing, and room availability.",
-    technologies: ["HTML", "CSS", "JavaScript", "MySQL"],
-    github: "#",
-    live: "#",
-    image: "/project-2.jpg", 
+    title: 'Hotel Management System',
+    category: 'Full Stack Development',
+    description:
+      'A hotel operations platform for room reservations, customer management, check-in and check-out, and billing.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
+    image: '/hotel-project-cover.svg',
+    github: 'https://github.com/Reddypruthvi/Hotel-management-system',
     features: [
-      "Guest reservations and check-in/check-out management.",
-      "Billing and room availability tracking.",
-      "Designed a normalized MySQL schema for guests, bookings, and payments.",
-      "User-friendly interface streamlining day-to-day operations for staff."
-    ]
+      'Manages room availability and guest reservations.',
+      'Supports customer records and check-in/check-out workflows.',
+      'Includes billing and booking management.',
+    ],
   },
   {
     id: 3,
-    title: "Weather App",
-    category: "Web Development",
-    description: "A responsive weather application integrating a live REST API to display real-time temperature, humidity, wind speed, and conditions.",
-    technologies: ["HTML", "CSS", "JavaScript", "REST API"],
-    github: "#",
-    live: "#",
-    image: "/project-4.jpg", 
+    title: 'Weather Application',
+    category: 'Web Development',
+    description:
+      'A weather application that displays current conditions and weather insights using live API data.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'REST API'],
+    image: '/weather-project-cover.svg',
+    github: 'https://github.com/Reddypruthvi/weather-apps',
     features: [
-      "Live REST API integration for real-time weather data.",
-      "Displays temperature, humidity, and wind speed.",
-      "Dynamic UI updates based on weather conditions.",
-      "Robust error handling for invalid inputs and network failures."
-    ]
-  }
+      'Retrieves current weather from a REST API.',
+      'Displays temperature, humidity, wind speed, and conditions.',
+      'Provides AI-assisted weather insights.',
+    ],
+  },
+  {
+    id: 4,
+    title: 'E-Commerce Sales and Customer Analytics Dashboard',
+    category: 'Data Analytics',
+    description:
+      'An analytics project focused on exploring sales and customer data through interactive dashboards and business metrics.',
+    technologies: ['SQL', 'Power BI', 'Excel', 'DAX'],
+    image: '/analytics-project-cover.svg',
+    github: profileRepositories,
+    repositoryLabel: 'Browse GitHub',
+    features: [
+      'Explores sales and customer data.',
+      'Uses DAX measures for business metrics.',
+      'Presents findings in interactive dashboards.',
+    ],
+  },
+  {
+    id: 5,
+    title: 'House Price Prediction',
+    category: 'Machine Learning',
+    description:
+      'A machine-learning project that estimates house prices from property features.',
+    technologies: ['Python', 'Machine Learning'],
+    image: '/house-price-project-cover.svg',
+    github: profileRepositories,
+    repositoryLabel: 'Browse GitHub',
+    features: [
+      'Uses property features as model inputs.',
+      'Applies a machine-learning approach to price estimation.',
+      'Supports data-driven comparison of property values.',
+    ],
+  },
 ];

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { FiGithub } from 'react-icons/fi';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,13 +18,15 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder for actual form submission
-    setStatus('sending');
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setStatus(''), 3000);
-    }, 1500);
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      '',
+      formData.message,
+    ].join('\n');
+    const mailto = `mailto:pruthvireddyk3@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+    setStatus('Your email app should open with your message ready to send.');
   };
 
   return (
@@ -37,7 +40,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-              Let's build something <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">great.</span>
+              Let's build something <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-lime-200">great.</span>
             </h2>
             <p className="text-gray-400 text-lg mb-10 max-w-md">
               Have an idea, opportunity, or project in mind? Let's connect and make it happen.
@@ -73,6 +76,21 @@ const Contact = () => {
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors">Bangalore, Karnataka, India</p>
                 </div>
               </div>
+
+              <a
+                href="https://github.com/Reddypruthvi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-4"
+              >
+                <div className="rounded-full bg-white/5 p-4 transition-colors group-hover:bg-accent/20">
+                  <FiGithub className="text-accent" size={24} />
+                </div>
+                <div>
+                  <h4 className="mb-1 font-bold text-white">GitHub</h4>
+                  <p className="text-gray-400 transition-colors group-hover:text-gray-300">github.com/Reddypruthvi</p>
+                </div>
+              </a>
             </div>
           </motion.div>
 
@@ -142,20 +160,12 @@ const Contact = () => {
 
               <button
                 type="submit"
-                disabled={status === 'sending'}
-                className="w-full py-4 rounded-xl bg-white text-black font-bold hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 disabled:opacity-70"
+                className="w-full py-4 rounded-xl bg-white text-black font-bold hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
               >
-                {status === 'sending' ? (
-                  'Sending...'
-                ) : status === 'success' ? (
-                  'Message Sent!'
-                ) : (
-                  <>
-                    <span>Send Message</span>
-                    <Send size={18} />
-                  </>
-                )}
+                <span>Open email draft</span>
+                <Send size={18} />
               </button>
+              <p className="text-center text-sm text-gray-400" aria-live="polite">{status}</p>
             </form>
           </motion.div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, ArrowUpRight } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold text-white mb-2">Pruthvi Reddy K © 2026</h3>
+            <h3 className="text-xl font-bold text-white mb-2">Pruthvi Reddy K © {new Date().getFullYear()}</h3>
             <p className="text-gray-400 text-sm">
               Software Developer · Full Stack Developer · AI/ML · Data Science
             </p>
@@ -21,6 +21,7 @@ const Footer = () => {
             <a href="#about" className="text-gray-400 hover:text-white transition-colors">About</a>
             <a href="#skills" className="text-gray-400 hover:text-white transition-colors">Skills</a>
             <a href="#projects" className="text-gray-400 hover:text-white transition-colors">Projects</a>
+            <a href="#certifications" className="text-gray-400 hover:text-white transition-colors">Certifications</a>
             <a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a>
           </div>
 
@@ -31,6 +32,9 @@ const Footer = () => {
             <span>Back to top</span>
             <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform" />
           </button>
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-5 text-center text-xs text-gray-500">
+          Built with React · <a href="https://github.com/Reddypruthvi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 transition hover:text-accent">GitHub <ArrowUpRight size={12} /></a>
         </div>
       </div>
     </footer>
